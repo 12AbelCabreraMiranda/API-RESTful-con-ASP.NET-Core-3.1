@@ -7,7 +7,6 @@ C:\Users\Abel\Documents\Visual Studio 2019\Projects\ApiPelilculas\ApiPelilculas\
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\ApiPelilculas\ApiPelilculas\bin\Debug\netcoreapp3.1\ApiPelilculas.runtimeconfig.dev.json
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\ApiPelilculas\ApiPelilculas\bin\Debug\netcoreapp3.1\ApiPelilculas.dll
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\ApiPelilculas\ApiPelilculas\bin\Debug\netcoreapp3.1\ApiPelilculas.pdb
-C:\Users\Abel\Documents\Visual Studio 2019\Projects\ApiPelilculas\ApiPelilculas\obj\Debug\netcoreapp3.1\ApiPelilculas.csprojAssemblyReference.cache
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\ApiPelilculas\ApiPelilculas\obj\Debug\netcoreapp3.1\ApiPelilculas.AssemblyInfoInputs.cache
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\ApiPelilculas\ApiPelilculas\obj\Debug\netcoreapp3.1\ApiPelilculas.AssemblyInfo.cs
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\ApiPelilculas\ApiPelilculas\obj\Debug\netcoreapp3.1\ApiPelilculas.RazorTargetAssemblyInfo.cache
@@ -63,3 +62,4 @@ C:\Users\Abel\Documents\Visual Studio 2019\Projects\ApiPelilculas\ApiPelilculas\
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\ApiPelilculas\ApiPelilculas\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\ApiPelilculas\ApiPelilculas\obj\Debug\netcoreapp3.1\ApiPelilculas.csproj.CoreCompileInputs.cache
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\ApiPelilculas\ApiPelilculas\obj\Debug\netcoreapp3.1\ApiPelilculas.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Abel\Documents\Visual Studio 2019\Projects\ApiPelilculas\ApiPelilculas\obj\Debug\netcoreapp3.1\ApiPelilculas.csprojAssemblyReference.cache

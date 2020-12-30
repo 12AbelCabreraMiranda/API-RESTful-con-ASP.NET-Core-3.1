@@ -33,8 +33,10 @@ namespace ApiPelilculas
         {
             services.AddDbContext<ApplicationDbContext>(Options => Options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            //Inyectando interfaz Categoria
+            //Añadiendo (repositorios). Inyectando interfaz Categoria
             services.AddScoped<ICategoriaRepository, CategoriaRepository>();
+            services.AddScoped<IPeliculaRepository, PeliculaRepository>();
+
             //Añadiendo Mapper
             services.AddAutoMapper(typeof(PeliculasMappers));
             services.AddControllers();

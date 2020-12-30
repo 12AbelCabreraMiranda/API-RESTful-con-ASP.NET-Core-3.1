@@ -1,4 +1,5 @@
 ﻿using ApiPelilculas.Models;
+using ApiPelilculas.Models.Dtos;
 using AutoMapper;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,9 @@ namespace ApiPelilculas.PeliculasMapper
         public PeliculasMappers()
         {
             CreateMap<Categoria, CategoriaDto>().ReverseMap();
+            CreateMap<Pelicula, PeliculaDto>().ReverseMap();
+            CreateMap<Pelicula, PeliculaCreateDto>().ReverseMap();
+            CreateMap<Pelicula, PeliculaUpdateDto>().ReverseMap();
         }
     }
 }
