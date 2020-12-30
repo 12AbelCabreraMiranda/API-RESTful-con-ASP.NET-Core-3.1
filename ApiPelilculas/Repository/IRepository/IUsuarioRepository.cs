@@ -8,15 +8,11 @@ namespace ApiPelilculas.Repository.IRepository
 {
     public interface IUsuarioRepository
     {
-        ICollection<Pelicula> GetPeliculas();
-        ICollection<Pelicula> GetPeliculasEnCategoria(int CatId);
-        Pelicula GetPelicula(int PeliculaId);
-        bool ExistePelicula(string nombre);
-        IEnumerable<Pelicula> BuscarPelicula(string nombre);
-        bool ExistePelicula(int id);
-        bool CrearPelicula(Pelicula pelicula);
-        bool ActualizarPelicula(Pelicula pelicula);
-        bool BorrarPelicula(Pelicula pelicula);
+        ICollection<Usuario> GetUsuarios();
+        Usuario GetUsuario(int UsuarioId);
+        bool ExisteUsuario(string usuario);
+        Usuario Registro(Usuario usuario, string password);
+        Usuario Login(string usuario, string password);
         bool Guardar();
     }
 }
