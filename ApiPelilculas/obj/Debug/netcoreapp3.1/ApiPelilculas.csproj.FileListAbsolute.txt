@@ -60,6 +60,13 @@ C:\Users\Abel\Documents\Visual Studio 2019\Projects\ApiPelilculas\ApiPelilculas\
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\ApiPelilculas\ApiPelilculas\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\ApiPelilculas\ApiPelilculas\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\ApiPelilculas\ApiPelilculas\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Abel\Documents\Visual Studio 2019\Projects\ApiPelilculas\ApiPelilculas\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Abel\Documents\Visual Studio 2019\Projects\ApiPelilculas\ApiPelilculas\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\Abel\Documents\Visual Studio 2019\Projects\ApiPelilculas\ApiPelilculas\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Abel\Documents\Visual Studio 2019\Projects\ApiPelilculas\ApiPelilculas\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Abel\Documents\Visual Studio 2019\Projects\ApiPelilculas\ApiPelilculas\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\ApiPelilculas\ApiPelilculas\obj\Debug\netcoreapp3.1\ApiPelilculas.csproj.CoreCompileInputs.cache
+C:\Users\Abel\Documents\Visual Studio 2019\Projects\ApiPelilculas\ApiPelilculas\obj\Debug\netcoreapp3.1\ApiPelilculas.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\ApiPelilculas\ApiPelilculas\obj\Debug\netcoreapp3.1\ApiPelilculas.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Abel\Documents\Visual Studio 2019\Projects\ApiPelilculas\ApiPelilculas\bin\Debug\netcoreapp3.1\ApiPelilculas.xml
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\ApiPelilculas\ApiPelilculas\obj\Debug\netcoreapp3.1\ApiPelilculas.csprojAssemblyReference.cache

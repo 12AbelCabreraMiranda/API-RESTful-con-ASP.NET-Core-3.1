@@ -7,14 +7,18 @@ using ApiPelilculas.Models;
 using ApiPelilculas.Models.Dtos;
 using ApiPelilculas.Repository.IRepository;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ApiPelilculas.Controllers
 {
+    [Authorize]
     [Route("api/Peliculas")]
     [ApiController]
+    [ApiExplorerSettings(GroupName = "ApiPeliculas")]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public class PeliculasController : ControllerBase
     {
         private readonly IPeliculaRepository _pelRepo;
@@ -28,6 +32,11 @@ namespace ApiPelilculas.Controllers
             _hostingEnvironment = hostingEnvironment;
         }
 
+        /// <summary>
+        /// Obtener todas las películas
+        /// </summary>
+        /// <returns></returns>
+        [AllowAnonymous]
         [HttpGet]
         public IActionResult GetPeliculas()
         {
@@ -43,6 +52,12 @@ namespace ApiPelilculas.Controllers
             return Ok(listaPeliculasDto);
         }
 
+        /// <summary>
+        /// Obtener una película individual
+        /// </summary>
+        /// <param name="peliculaId">Este es el id de la Película</param>
+        /// <returns></returns>
+        [AllowAnonymous]
         [HttpGet("{peliculaId:int}", Name = "GetPelicula")]
         public IActionResult GetPelicula(int peliculaId)
         {
@@ -56,7 +71,13 @@ namespace ApiPelilculas.Controllers
             var itemPeliculaDto = _mapper.Map<PeliculaDto>(itemPelicula);
             return Ok(itemPeliculaDto);
         }
-        
+
+        /// <summary>
+        /// Obtener películas por categoría
+        /// </summary>
+        /// <param name="categoriaId">Este es el id de la categoría</param>
+        /// <returns></returns>
+        [AllowAnonymous]
         [HttpGet("GetPeliculasEnCategoria/{categoriaId}")]
         public IActionResult GetPeliculasEnCategoria(int categoriaId)
         {
@@ -74,6 +95,12 @@ namespace ApiPelilculas.Controllers
             return Ok(itemPelicula);
         }
 
+        /// <summary>
+        /// Buscar peliculas por nombre o descripción
+        /// </summary>
+        /// <param name="nombre">Este es el nombre a buscar</param>
+        /// <returns></returns>
+        [AllowAnonymous]
         [HttpGet("Buscar")]
         public IActionResult Buscar(string nombre)
         {
@@ -93,6 +120,10 @@ namespace ApiPelilculas.Controllers
             }
         }
 
+        /// <summary>
+        /// Crear una nueva película
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         public IActionResult CrearPelicula([FromForm] PeliculaCreateDto PeliculaDto)//FromBody: quiere decir que está vinculado lo que enviemos(nombre) en el request  alos datos PeliculaDto
         {
@@ -137,6 +168,10 @@ namespace ApiPelilculas.Controllers
             return CreatedAtRoute("GetPelicula", new { peliculaId = pelicula.Id}, pelicula);
         }
 
+        /// <summary>
+        /// Actualizar una película existente
+        /// </summary>
+        /// <returns></returns>
         [HttpPatch("{peliculaId:int}", Name = "ActualizarPelicula")]
         public IActionResult ActualizarPelicula(int peliculaId, [FromBody] PeliculaUpdateDto peliculaDto)
         {
@@ -155,6 +190,11 @@ namespace ApiPelilculas.Controllers
             return NoContent();
         }
 
+        /// <summary>
+        /// Borrar una película existente
+        /// </summary>
+        /// <param name="peliculaId">Este es el id de la película</param>
+        /// <returns></returns>
         [HttpDelete("{peliculaId:int}", Name = "BorrarPelicula")]
         public IActionResult BorrarPelicula(int peliculaId)
         {                        
